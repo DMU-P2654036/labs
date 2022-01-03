@@ -1,0 +1,117 @@
+.h1{
+  font-size: 50px;    /*heading size*/
+}
+
+.c{
+  text-align: center;
+  word-break: justify;                 /*Class which changes synopsis formating*/
+  margin-left: 16%;
+  margin-right: 16%;
+  margin-bottom: 1%;
+}
+.f{       /*Positioning video in the center of the page. Same rule for footer.*/
+  text-align: center;
+  word-break: justify;
+  margin-bottom: 1%; /*looks better*/
+  width: 100%;
+
+}
+/* .unlisted{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.listed{
+
+display: inline;
+}
+
+*/
+
+.pic{       /* Images size, position and margins */
+
+width: 400px;
+height: 400px;
+text-align: left;
+margin-bottom: 30px;
+margin-right: 50px;
+
+}
+/*
+The size has been set for resolution 1920 x 1080.
+Below I have added a few rules for different resolutions, what goal is to keep page layout on different screens.
+*/
+
+@media (max-width: 1680px) {   /* If resolution is 1680 or less, then...*/
+
+  .pic
+{
+  width: 250px;
+  height: 250px;
+}
+}
+
+@media (max-width: 1280px) { /* If resolution is 1280 or less, then...*/
+
+  .pic
+{
+  width: 170px;
+  height: 170px;
+}
+}
+
+.restext
+{
+  font-size: 16px;
+}
+
+@media (max-width: 1680px){
+
+.restext{
+  font-size: 14px;
+}
+
+}
+
+@media (max-width: 1280px){
+
+.restext{
+  font-size: 10px;
+}
+
+}
+
+
+
+.audio{ /*audio controls visual changes. (consistent with the desired appearance). */
+  width: 100%;
+}
+.container{         /*Here. I have addead a class, which gives a links a typical "menu" layout. Flex elements are positioned in the center, in a row. */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 170%;
+  column-gap: 20px;
+  background-color:  #ffff00;
+
+
+}
+
+.plain{   /*This makes a menu not looke like normal links (blue and underlined) */
+  text-decoration: none;
+  color: black;
+}
+
+
+.container1{ /* keeps text  and audio controls on top  */
+  vertical-align: top;
+
+}
+
+.container1, .pic{ /*The location of the elements in the table allowed me to arrange them next to each other*/
+
+  display:inline-table;
+}
