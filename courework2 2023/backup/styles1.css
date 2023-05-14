@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Comme:wght@550&display=swap');
+
+/* Set default styles for the body */
+body {
+    font-family: 'Comme', sans-serif;
+    letter-spacing: 0.12em;
+    line-height: 1.5;
+    margin: 0;
+    display: flex;
+    overflow: hidden;
+}
+
+/* Set styles for the container div */
+.container {
+    display: flex;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./images/s2.jpg');
+    background-position: 35%;
+    background-size: auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Set styles for the text paragraph */
+.text {
+    padding: 2rem;
+}
+
+.container p {
+    color: #fff;
+    background-color: #00000081;
+    padding: 1.2rem;
+    border-radius: 20px;
+}
+
+/* Set styles for the buttons */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20%;
+}
+
+button {
+    padding: 0.8rem 2.2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0000002b;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #000;
+    border-radius: 8px;
+    transition: all 0.1s ease;
+}
+
+button:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/**/
+
+.burger-menu {
+    position: relative;
+}
+
+.burger-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    position: relative;
+}
+
+.burger-icon {
+    background-color: #333;
+    display: block;
+    height: 3px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    width: 20px;
+}
+
+.burger-icon::before,
+.burger-icon::after {
+    background-color: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+}
+
+.burger-icon::before {
+    top: -6px;
+}
+
+.burger-icon::after {
+    bottom: -6px;
+}
+
+.menu {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    left: -20vw;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    transition: left 0.3s ease-in-out;
+    width: 200px;
+    z-index: 1;
+}
+
+.menu-open {
+    left: 0;
+}

@@ -1,0 +1,8 @@
+const title = document.getElementById("title");
+const text = "The House";
+
+for (let i = 0; i < text.length; i++) {
+  setTimeout(function () {
+    title.innerHTML += text[i];
+  }, 100 * i);
+}
