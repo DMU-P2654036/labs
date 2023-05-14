@@ -86,3 +86,23 @@ h1 {
 .button:hover {
     transform: scale(1.1);
 }
+
+/* media queries */
+@media only screen and (max-width: 600px) {
+    /* modify the styles for screens smaller than 600px */
+    .container {
+        flex-direction: column;
+    }
+    
+    .button {
+        height: 10%;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    .story {
+        font-size: 1em;
+    }
+}
