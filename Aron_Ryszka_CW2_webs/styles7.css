@@ -1,0 +1,78 @@
+/* Importing the font */
+@import url('https://fonts.googleapis.com/css2?family=Comme:wght@650&display=swap');
+
+/* Setting up the body */
+body {
+    background-image: url('./images/s8.jpg');
+    background-size: cover;
+    background-position: 50%;
+    /* Setting the position of the image to be visible as a background */
+    font-family: 'Comme', sans-serif;
+    letter-spacing: 0.12em;
+    line-height: 1.5;
+    margin: 0;
+    /* Setting margin to 0 to center page elements */
+    display: flex;
+    /* Using display flex to make sure the div element spans the entire screen without scrollbars */
+}
+
+/* Setting up the container */
+.container {
+    display: flex;
+    /* Flex allows us to use align-items and justify-content */
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-around;
+    /* Adding space around the elements */
+    align-items: center;
+    flex-direction: column;
+    /* Making sure the elements are arranged in a column */
+}
+
+.inner-container {
+    width: 60%;
+    background-color: #ffffff36;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+/* Setting up the paragraph inside the container */
+.inner-container p {
+    font-size: 2rem;
+    color: #000;
+}
+
+/* Setting up the buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    /* Aligning the buttons to be at the center of the container */
+    align-items: center;
+    /* Aligning the buttons vertically */
+    height: 20%;
+}
+
+/* Setting up each button */
+button {
+    padding: 0.8rem 2.2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0000002b;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #000;
+    border-radius: 8px;
+    transition: all 0.1s ease;
+}
+
+button:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
