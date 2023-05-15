@@ -8,6 +8,7 @@ body {
     overflow: hidden;
   background-image: url('./images/s1.jpg');
     background-size: cover;
+    background-repeat: no-repeat; 
     /*setting the value of flex so that the div element is stretched to cover the entire screen so that there are no scrollbars*/
 }
 
